@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+	
+	var estrelas = parseInt(prompt("Quantas estrelas voce quer por linha?"));
+	var linhas = parseInt(prompt("Quantas linhas voce quer?"));
+
+	for (i = 1; i <= linhas; i++) {
+
+		for (j = 1; j <= estrelas; j++) {
+
+			document.write("*");
+
+		}
+
+		document.write("<br>");
+	}
+
+
+	mostra("Fim");
+	
+</script>

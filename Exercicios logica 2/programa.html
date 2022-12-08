@@ -1,0 +1,41 @@
+<canvas width="600" height="400"></canvas>
+
+
+
+<script>
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'lightgrey';
+
+	pincel.fillRect(0, 0 , 600, 400);
+	// 0, 0 --> coordenada inicial do retangulo, x, y - x - horizontal superior / y - vertical esquerdo 
+	// fill - preencher / Rect - retangulo / 
+
+	pincel.fillStyle = 'green';
+
+	pincel.fillRect(0, 0 , 200, 400);
+
+
+	pincel.fillStyle = 'red';
+
+	pincel.fillRect(400, 0 , 200, 400);
+
+
+	pincel.fillStyle = 'blue';
+	pincel.beginPath();
+	pincel.arc(300, 222, 88, 0, 2 * 3.14152);
+	pincel.fill();
+
+	
+	pincel.fillStyle = 'yellow';
+
+	pincel.beginPath();
+	pincel.moveTo(300, 135);
+	pincel.lineTo(225, 265);
+	pincel.lineTo(375, 265);
+	pincel.fill();
+	
+
+</script>

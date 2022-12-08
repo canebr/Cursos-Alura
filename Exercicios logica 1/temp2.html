@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function sorteia(n) {
+
+		return Math.round(Math.random() * n);
+
+	}
+
+
+	var limite = parseInt(prompt("Voce quer o sorteio entre 0(zero) e que número?"));
+	var numeroPensado = sorteia(limite);
+
+	mostra("teste");
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

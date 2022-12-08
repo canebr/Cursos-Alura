@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function calculaImc(peso, altura){
+
+		var imc = peso / (altura * altura);
+		return imc;
+
+	}
+
+	var nome = prompt("informe o seu nome");
+	var altura = prompt(nome + ", informe sua altura");
+	var peso = prompt(nome + ", informe o seu peso");
+	imc = calculaImc(peso, altura);
+
+
+	if(imc < 18.5){
+		mostra(nome + ", voce está muito magro!");
+		pulaLinha();
+	} else {
+			if(imc >= 18.5 && imc < 25){
+			mostra(nome + ", seu peso está ótimo!");
+			pulaLinha();
+			} else {
+				if(imc >= 25 && imc < 30){
+				mostra(nome + ", voce está com sobrepeso!");
+				pulaLinha();
+				} else {
+					if(imc >= 30 && imc < 35){
+					mostra(nome + ", voce apresenta obesidade grau I! Cuidado!");
+					pulaLinha();
+					} else {
+						if(imc >= 35 && imc <= 40){
+						mostra(nome + ", voce apresenta obesidade grau II! Cuidado!");
+						pulaLinha();
+						} else {
+							if(imc > 40){
+							mostra(nome + ", voce apresenta obesidade grau III! Cuidado!");
+							pulaLinha();
+							}
+						}
+					}
+				}
+			}
+		}
+	
+
+
+	mostra("Fim")
+
+</script>
+

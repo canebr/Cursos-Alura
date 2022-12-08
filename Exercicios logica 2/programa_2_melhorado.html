@@ -1,0 +1,31 @@
+<canvas width="800" height="400"></canvas>
+
+
+
+<script>
+
+	function desenhaQuadrado(corPreenche, corBorda, xInicio, yInicio, Largura) {
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = corPreenche;
+	pincel.fillRect(xInicio, yInicio, Largura, Largura);
+	pincel.strokeStyle = corBorda;
+	pincel.strokeRect(xInicio, yInicio, Largura, Largura);
+
+
+	}
+
+	for(var i = 0; i<8; i++ ) {
+
+		for(var j = 0; j<8; j++) {
+
+			desenhaQuadrado('green','red', i * 50, i * 50, 50, 50);
+			desenhaQuadrado('green','red', 700 - i * 50, i * 50, 50, 50);
+		}
+
+	}
+
+</script>
+

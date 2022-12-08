@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostraTexto(texto) {
+
+		document.write(texto);
+		pulaLinha();
+
+	}
+
+	var num = parseInt(prompt("Digite o número do qual voce quer a taboada:"));
+		
+	mostraTexto("A taboada do " + num + " é:");
+
+	for(var i = 1; i <= 10; i++) {
+
+		mostraTexto(i + " X " + num + " = " + i * num);
+		
+	}
+
+	mostraTexto("Fim");
+
+</script>
